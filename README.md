@@ -17,18 +17,16 @@ conda activate splus-tl
 
 ## How to Predict on a New Dataset
 
-The **Prediction on New Dataset** section at the bottom of each notebook is standalone —
+The **Prediction on New Dataset** section at the bottom of `deit_finetune_ensemble.ipynb` is standalone —
 you only need the saved weights, no retraining required.
 
 **1. Make sure weights are in place:**
 
 ```
 Transfer_learning/weights/
-  vit-*.ckpt         ← DeiT checkpoint  (deit notebook)
-  effnet-*.ckpt      ← EfficientNet checkpoint  (efficientnet notebook)
+  vit-*.ckpt
   brf_tabular.pkl
-  meta_lr.pkl        ← stacking meta-model  (deit notebook)
-  meta_lr_effnet.pkl ← stacking meta-model  (efficientnet notebook)
+  meta_lr.pkl
   features_sel.pkl
 ```
 
@@ -74,8 +72,7 @@ to get a classification report and confusion matrix.
 
 | Notebook | Model | Description |
 |---|---|---|
-| `deit_finetune_ensemble.ipynb` | DeiT-base (ViT) | Last 3 transformer blocks fine-tuned + BRF ensemble |
-| `efficientnet_b0_ensemble.ipynb` | EfficientNet-B0 | Full fine-tuning + BRF ensemble |
+| `deit_finetune_ensemble.ipynb` | DeiT-base (ViT) + BRF | Main model — transformer fine-tuning + stacking ensemble |
 | `random-forest.ipynb` | BalancedRandomForest | Tabular-only baseline |
 | `analise_exploratoria_tabela.ipynb` | — | EDA of morphological features |
 
