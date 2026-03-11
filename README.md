@@ -73,7 +73,6 @@ to get a classification report and confusion matrix.
 | Notebook | Model | Description |
 |---|---|---|
 | `deit_finetune_ensemble.ipynb` | DeiT-base (ViT) + BRF | Main model — transformer fine-tuning + stacking ensemble |
-| `random-forest.ipynb` | BalancedRandomForest | Tabular-only baseline |
 | `analise_exploratoria_tabela.ipynb` | — | EDA of morphological features |
 
 ---
