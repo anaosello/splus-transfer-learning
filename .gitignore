@@ -1,3 +1,4 @@
-checkpoints/*
-tb_logs/*
+Transfer_learning/weights/
+tb_logs/
 .ipynb_checkpoints
+*.bak
